@@ -1,0 +1,96 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body><br><br>
+    <from>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>This Makes Class Body</h1>
+                    Class Name:<br>
+                    <input type="text" id="className"><br>
+                    HitDie:<br>
+                    <input type="number" id="hd"><br>
+                    Proficiency:<br>
+                    <input type="text" id="prof"><br>
+                    Number of Skills you can choose:<br>
+                    <input type="number" id="nSkills"><br>
+                    Spell Casting Ability:<br>
+                    <input type="text" id="spellAbility"><br>
+
+                    <button id="ClassButton">Generate Class Body XML</button>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <p class="mb-0">XML:</p>
+                    <textarea id="classXmlOutput"></textarea><br>
+                </div>
+            </div>
+        </div>
+    </from>
+
+
+
+
+
+    <br><br><br>
+
+    <from>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>This Makes Spell per level</h1>
+
+                    <button onclick="generateSpellXML()">Click me to Generate Spell XML</button>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <p class="mb-0">XML:</p>
+                    <textarea id="xmlOutput" rows="10" cols="50"></textarea><br>
+                </div>
+            </div>
+        </div>
+    </from>
+
+
+
+    <br><br><br>
+
+    <from>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>This Makes features per level</h1>
+                    Class Name:<br>
+                    <input type="number" id="repeatLevelInput" placeholder="Enter repetition count..."><br>
+
+                    <button onclick="generateLevelXML()">Generate XML</button>
+                </div>
+                <div class="col d-flex flex-column justify-content-center align-items-center">
+                    <p class="mb-0">XML:</p>
+                    <textarea id="xmlLevelOutput" rows="10" cols="50"></textarea><br>
+                </div>
+            </div>
+        </div>
+    </from>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex flex-column justify-content-center align-items-center">
+                <form>
+                    <button onclick="generateFinalXML()">Generate full Class xml</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body></html>
